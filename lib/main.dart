@@ -24,12 +24,20 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('หน้าแรก'),
       ),
-      body: const Center(
-        child: Text(
-          'สวัสดีFlutter',
-          style: TextStyle(fontSize: 24),
-        ),
+      body: const Column(
+        children: [
+          Text("phachaya"),
+          Text("pannak"),
+          Row(
+            children: [
+              Icon(Icons.face),
+              Icon(Icons.book),
+              Icon(Icons.laptop),
+            ],
+          )
+        ],
       ),
+
     );
   }
 }
